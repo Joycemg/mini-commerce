@@ -2,12 +2,20 @@
     margin: 10px 10px 10px 10px;
 }
 .container{
-    display: grid;
-    justify-content: center ;
+    margin: 5px 5px 5px 5px;
 }
 
 .Header{
+    margin-bottom: 50px;
     text-align: center;
+    justify-content: center;
     color: royalblue;
+}
 
+.Products{
+    text-align: center;
+    display: grid;
+    grid-gap: 30px 100px;
+    justify-content: center;
+    grid-template-columns: 150px 150px 150px 150px;
 }
