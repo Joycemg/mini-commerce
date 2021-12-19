@@ -16,6 +16,14 @@
     text-align: center;
     display: grid;
     grid-gap: 30px 100px;
-    justify-content: center;
-    grid-template-columns: 150px 150px 150px 150px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: center; 
+}
+
+img{
+    height: auto;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
 }

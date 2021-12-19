@@ -10,7 +10,7 @@ export const ListProduct = () => {
 
     return(
         <div className="Products">
-            {products.map((product, index) => <Product key={index} title={product.title} />)}
+            {products.map((product, index) => <Product key={index} item={product} />)}
         </div>
     );
 
