@@ -1,4 +1,5 @@
 import React from "react";
+import { BsCartPlusFill } from "react-icons/bs";
 
 export const Product = ({item}) => {
 
@@ -6,9 +7,11 @@ export const Product = ({item}) => {
     return(
         <div className="product">
             <div> <h3>{title}</h3> </div>
-            <div> <img src={image} alt="img"/> </div>
+            <div className="product-grid">
+                <img className="imgProduct" src={image} alt="img"/> 
+                <a href='#' className="product-grid-cart--bottom"><BsCartPlusFill/></a>
+            </div>
             <div className="bottom"> <a href='#'>Precio: {price}$</a> </div>
-            <div className="descripcion">{description}</div>
         </div>
     );
 };
