@@ -9,9 +9,11 @@ export const Product = ({item}) => {
             <div> <h3>{title}</h3> </div>
             <div className="product-grid">
                 <img className="imgProduct" src={image} alt="img"/> 
-                <a href='#' className="product-grid-cart--bottom"><BsCartPlusFill/></a>
             </div>
-            <div className="bottom"> <a href='#'>Precio: {price}$</a> </div>
+            <div className="bottom"> 
+                <h2>Precio: {price}$</h2>
+                <a href="#"><BsCartPlusFill/></a>
+            </div>
         </div>
     );
 };

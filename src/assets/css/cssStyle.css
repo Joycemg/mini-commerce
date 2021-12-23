@@ -42,18 +42,18 @@ body {
     height: 500px;
 }
 
-.product-grid{
+/* .product-grid{
     display: inline-block;
     position: relative;
-}
-.product-grid-cart--bottom{
+} */
+/* .product-grid-cart--bottom{
     position: absolute;
     left: 170px;
     top: 280px;
     font-size: 40px;
     color: #ee850e;
 
-}
+} */
 .cartIcon {
     color: #000000;
 }
@@ -83,10 +83,10 @@ body {
     border-color: #9b7e46;
     border-width: 3px;
     border-style: solid;
+    border-radius: 10px 30px;
 }
 
-.bottom a{
-    text-decoration:none;
+.bottom h2{
     font-weight: 600;
     font-size: 20px;
     color:#ffffff;
