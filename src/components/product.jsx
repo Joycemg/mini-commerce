@@ -3,16 +3,20 @@ import { BsCartPlusFill } from "react-icons/bs";
 
 export const Product = ({item}) => {
 
-    const { title, image, price, description } = item;
+    const { title, image, price, description, count = item.rating.count} = item;
     return(
         <div className="product">
-            <div> <h3>{title}</h3> </div>
-            <div className="product-grid">
+            <h3>{title}</h3>
+            <div>
                 <img className="imgProduct" src={image} alt="img"/> 
+                <p>Quedan: {count}</p>
             </div>
-            <div className="bottom"> 
-                <h2>Precio: {price}$</h2>
-                <a href="#"><BsCartPlusFill/></a>
+            <div className='box-info'>
+                    <p>{description}</p>
+                <div className="buttom"> 
+                    <BsCartPlusFill/>
+                    <p>Precio: {price}$</p>
+                </div>
             </div>
         </div>
     );
