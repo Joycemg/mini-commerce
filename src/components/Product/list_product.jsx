@@ -1,5 +1,5 @@
 import React from "react";
-import Json from "../listPro/products.json"
+import Json from "../../listPro/products.json"
 import {Product} from "./product"
 
 

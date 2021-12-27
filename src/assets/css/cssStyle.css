@@ -24,6 +24,7 @@ body {
     border: 1px double #808f87;
     border-radius: 10px;
     z-index: 10000;
+    box-shadow: 0px 2px 16px 0px rgba(0,0,0,0.2);
 }
 .Header--item-center{
     color: f4b266;
@@ -34,6 +35,9 @@ body {
     background-color: #afd0bf;
     border: none;
     cursor: pointer;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
 }
 .Header-cart-icon:hover{
     color:   #808f87;;
@@ -41,6 +45,23 @@ body {
 
 .cartIcon {
     color: #000000;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #E2EFDE;
+    border: 1px solid #afd0bf;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 0;
+    right: 0;
+    width: 300px;
+}
+  
+.Header-cart:hover .dropdown-content {
+    display: block;
 }
 
 .Products{
@@ -60,7 +81,9 @@ body {
     justify-content: space-between;
     align-items: center;
     font-size: 2rem;
-    
+}
+.product h3{
+    font-size: 2rem;
 }
 
 .imgProduct {
@@ -88,3 +111,28 @@ body {
     font-size: 20px;
     font-weight: 600;
 }
+
+.alert {
+    padding: 20px;
+    text-align: center;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+  }
+  
+  /* The close button */
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: black;
+  }

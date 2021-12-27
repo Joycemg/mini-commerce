@@ -1,5 +1,6 @@
 import React from "react";
 import { BsCartPlusFill } from "react-icons/bs";
+import { saveLastInterestProduct } from "../../app/services/storageServices";
 
 export const Product = ({item}) => {
 
@@ -15,7 +16,9 @@ export const Product = ({item}) => {
                     <p>{description}</p>
                 <div className="buttom"> 
                     <BsCartPlusFill/>
-                    <p>Precio: {price}$</p>
+                    <button onClick={() => saveLastInterestProduct(title)}>
+                        <p>Precio: {price}$</p>
+                    </button>
                 </div>
             </div>
         </div>

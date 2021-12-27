@@ -1,5 +1,5 @@
 import React from 'react';
-import { DropDawn } from './shoppingCart/show_cart';
+import { ShoppingCart } from './shoppingCart/ShoppingCart';
 
 import "../assets/css/cssStyle.css"
 
@@ -11,7 +11,7 @@ export const HeaderApp = () => (
         </div>
 
         <div>
-           <DropDawn/>
+           <ShoppingCart/>
         </div>
     </div>
 );
