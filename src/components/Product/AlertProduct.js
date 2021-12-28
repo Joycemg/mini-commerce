@@ -12,6 +12,9 @@ export const AlertProduct = () => {
             setShow(true)
         }
         
+        return () => {
+            sessionStorage.removeItem("lasProduct")
+        }
 
     },[]);
     
@@ -21,7 +24,7 @@ export const AlertProduct = () => {
             <div class="alert" >
                 <buttom class="closebtn" onClick={() => setShow(false)}>x
                 </buttom>
-                <p>Aprovecha para comprar el producto ${product} antes que se agote!
+                <p>Aprovecha para comprar el producto {product} antes que se agote!
                 </p>
             </div>
         );
