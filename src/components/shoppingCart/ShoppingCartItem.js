@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import {useLiveQuery} from "dexie-react-hooks"
 import db from '../../app/db/db'
+import { Link } from 'react-router-dom'
 
 export const ShoppingCartItem = () => {
 
@@ -30,11 +31,10 @@ export const ShoppingCartItem = () => {
         <div className='dropdown-content-cart'>
             {productsCart?.map((product, index) => 
             <div key={index} className="dropdown-content-product"> 
-                <a href="#" className="dropdown-content-product--un" key={product.id}> {product.title} - ${product.price} - {product.category  }
-            </a>
+                <Link to={`/product/${product.id}`} className="dropdown-content-product--un" key={product.id}> {product.title} - ${product.price} - {product.category  }
+            </Link>
         </div>)}
-            <p className='price-total'>Total: {totalPrice}</p>
-
+            <Link to="/purchase" className='price-total'>Total: {totalPrice}</Link>
         </div>
     )
 }
